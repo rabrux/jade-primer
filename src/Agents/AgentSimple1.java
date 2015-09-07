@@ -15,6 +15,7 @@ import jade.core.Agent;
  */
 public class AgentSimple1 extends Agent {
 
+  @Override
   protected void setup() {
     addBehaviour( new Simple1( this ) );
   }
