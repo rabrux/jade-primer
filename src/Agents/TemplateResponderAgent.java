@@ -16,7 +16,6 @@ public class TemplateResponderAgent extends Agent {
 
   @Override
   protected void setup() {
-    System.out.println("Responser");
     addBehaviour( new TemplateResponderBehaviour( this ) );
   }
 

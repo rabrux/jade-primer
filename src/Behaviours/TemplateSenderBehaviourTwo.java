@@ -27,8 +27,8 @@ public class TemplateSenderBehaviourTwo extends CyclicBehaviour {
     ACLMessage msg= myAgent.receive();
     if (msg!=null)
       System.out.println( "gets "
-        +  msg.getPerformative() + " from "
-        +  msg.getSender().getLocalName() + "="
+        +  ACLMessage.getPerformative( msg.getPerformative() ) + " from "
+        +  msg.getSender().getLocalName() + ":"
         +  msg.getContent() );
     else
       System.out.println( "gets NULL" );
