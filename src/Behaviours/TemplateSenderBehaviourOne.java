@@ -25,6 +25,11 @@ public class TemplateSenderBehaviourOne extends CyclicBehaviour {
 
   public TemplateSenderBehaviourOne( Agent a ) {
     super( a );
+    ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
+    msg.setContent( "Ping" );
+    for (int i = 1; i<=2; i++)
+      msg.addReceiver( new AID( "a" + i, AID.ISLOCALNAME) );
+    myAgent.send(msg);
   }
 
   @Override

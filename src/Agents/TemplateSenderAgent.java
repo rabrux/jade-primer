@@ -19,11 +19,6 @@ public class TemplateSenderAgent extends Agent {
 
   @Override
   protected void setup() {
-    ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
-    msg.setContent( "Ping" );
-    for (int i = 1; i<=2; i++)
-      msg.addReceiver( new AID( "a" + i, AID.ISLOCALNAME) );
-    send(msg);
 
     addBehaviour( new TemplateSenderBehaviourOne( this ) );
     addBehaviour( new TemplateSenderBehaviourTwo( this ) );
