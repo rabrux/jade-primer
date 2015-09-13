@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package Bank1.Ontologies;
+package Bank2.Ontologies;
 
 import jade.content.AgentAction;
 

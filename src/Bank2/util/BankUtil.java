@@ -3,10 +3,10 @@
  * and open the template in the editor.
  */
 
-package Bank1.util;
+package Bank2.util;
 
-import Bank1.Ontologies.BankVocabulary;
-import Bank1.Ontologies.Problem;
+import Bank2.Ontologies.BankVocabulary;
+import Bank2.Ontologies.Problem;
 
 /**
  *
